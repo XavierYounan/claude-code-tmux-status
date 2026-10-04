@@ -1,0 +1,14 @@
+{
+  "name": "tmux-status",
+  "description": "tmux integration for Claude Code.",
+  "owner": {
+    "name": "Xavier Younan"
+  },
+  "plugins": [
+    {
+      "name": "tmux-status",
+      "source": "./",
+      "description": "Claude Code's state (working, waiting for you, done) as coloured glyphs on your tmux window tabs."
+    }
+  ]
+}

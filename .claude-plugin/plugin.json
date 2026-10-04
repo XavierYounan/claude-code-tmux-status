@@ -1,0 +1,7 @@
+{
+  "name": "tmux-status",
+  "version": "0.1.0",
+  "description": "Shows Claude Code's state (working, waiting for you, done) as coloured glyphs on your tmux window tabs.",
+  "author": { "name": "Xavier Younan" },
+  "license": "MIT"
+}
