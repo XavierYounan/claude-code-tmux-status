@@ -4,7 +4,7 @@ A [Claude Code](https://claude.com/claude-code) mod that shows what each
 Claude session is doing in your tmux status bar, so you can see at a glance
 which windows are busy, which need you and which have finished.
 
-![tmux status bar with Claude glyphs: a green tick on a finished window, yellow and red dots on windows in progress and waiting](docs/screenshot.png)
+![tmux window tabs changing state: yellow dots while Claude works, red while it waits for you, green ticks when it finishes](docs/demo.gif)
 
 | Glyph | State | Shown |
 | --- | --- | --- |
