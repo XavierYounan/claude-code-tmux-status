@@ -1,4 +1,4 @@
-# tmux-status
+# claude-code-tmux-status
 
 A [Claude Code](https://claude.com/claude-code) mod that shows what each
 Claude session is doing in your tmux status bar, so you can see at a glance
@@ -19,17 +19,24 @@ Outside tmux the mod does nothing.
 **1. The mod.** From GitHub:
 
 ```sh
-claude plugin marketplace add XavierYounan/tmux_mod
+claude plugin marketplace add XavierYounan/claude-code-tmux-status
 claude plugin install tmux-status@tmux-status
 ```
 
-Or from a local clone, for one session: `claude --plugin-dir /path/to/tmux_mod`.
+Or from a local clone, for one session: `claude --plugin-dir /path/to/claude-code-tmux-status`.
 
-**2. The tmux side.** Add this to `tmux.conf`, *after* your theme or plugin
-manager loads (themes usually overwrite the window formats):
+**2. The tmux side.** With [tpm](https://github.com/tmux-plugins/tpm), add
+this *after* your theme's `@plugin` line (themes usually overwrite the window
+formats, so this needs to load after them), then press `prefix + I`:
 
 ```tmux
-source-file /path/to/tmux_mod/tmux/claude-status.tmux
+set -g @plugin 'XavierYounan/claude-code-tmux-status'
+```
+
+Without tpm, clone the repo and source the snippet after your theme loads:
+
+```tmux
+source-file /path/to/claude-code-tmux-status/tmux/claude-status.tmux
 ```
 
 That prefixes the glyph to every window tab. To put it somewhere else, comment

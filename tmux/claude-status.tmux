@@ -1,4 +1,4 @@
-# tmux side of the tmux-status Claude Code mod.
+# tmux side of claude-code-tmux-status (the tmux-status Claude Code mod).
 #
 # The mod sets the window option @claude_state to working, waiting or done.
 # @claude_status turns that into a coloured glyph; put #{E:@claude_status}
@@ -7,7 +7,8 @@
 # it (the next prompt clears it).
 #
 # Source this AFTER your theme, since most themes overwrite window-status-format:
-#   source-file /path/to/tmux_mod/tmux/claude-status.tmux
+#   source-file /path/to/claude-code-tmux-status/tmux/claude-status.tmux
+#   or with tpm: set -g @plugin 'XavierYounan/claude-code-tmux-status'
 
 set -g @claude_icon_working "#[fg=#f9e2af]●#[fg=default]"
 set -g @claude_icon_waiting "#[fg=#f38ba8,bold]●#[fg=default,nobold]"
