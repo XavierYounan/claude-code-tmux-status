@@ -13,7 +13,7 @@ set -g @claude_icon_working "#[fg=#f9e2af]●#[fg=default]"
 set -g @claude_icon_waiting "#[fg=#f38ba8,bold]●#[fg=default,nobold]"
 set -g @claude_icon_done    "#[fg=#a6e3a1]✓#[fg=default]"
 
-set -g @claude_status "#{?#{==:#{@claude_state},working},#{E:@claude_icon_working} ,#{?#{==:#{@claude_state},waiting},#{E:@claude_icon_waiting} ,#{?#{&&:#{==:#{@claude_state},done},#{!=:#{window_active},1}},#{E:@claude_icon_done} ,}}}"
+set -g @claude_status "#{?#{==:#{@claude_state},working}, #{E:@claude_icon_working},#{?#{==:#{@claude_state},waiting}, #{E:@claude_icon_waiting},#{?#{&&:#{==:#{@claude_state},done},#{!=:#{window_active},1}}, #{E:@claude_icon_done},}}}"
 
 # Prefix the glyph to every window tab (once, so re-sourcing is safe).
 # Comment these out if you place #{E:@claude_status} in your own formats.
