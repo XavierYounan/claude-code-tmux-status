@@ -8,9 +8,9 @@ which windows are busy, which need you and which have finished.
 
 | Glyph | State | Shown |
 | --- | --- | --- |
-| yellow `●` | working on a turn | always |
-| red `●` | waiting for you: a permission prompt, a question, an MCP elicitation | always |
-| green `✓` | finished its turn | only on windows you are not looking at |
+| <img src="docs/working.svg" width="16" height="16" alt="yellow dot"> yellow | working on a turn | always |
+| <img src="docs/waiting.svg" width="16" height="16" alt="red dot"> red | waiting for you: a permission prompt, a question, an MCP elicitation | always |
+| <img src="docs/done.svg" width="16" height="16" alt="green tick"> green | finished its turn | only on windows you are not looking at |
 
 Outside tmux the mod does nothing.
 
